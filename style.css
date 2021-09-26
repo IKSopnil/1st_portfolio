@@ -256,6 +256,7 @@ background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
 .card:hover{
    transform: scale(1.05);
    box-shadow: 2px 6px 5px #2f2424;
+    color:red;
 }
 #team {
    padding: 60px 0;
