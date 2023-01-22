@@ -341,10 +341,8 @@ footer{
    background-color: #000000;
 }
 .fixed-bottom i{
-   color: #999;
-   border: none;
-   background:none;
-  
+   
+  text-shadow: 0 0 10px rgb(255, 0, 0);
 }
 .fixed-bottom i:hover{
   
