@@ -106,7 +106,7 @@
                    <h4 class="mb-5 mt-4" style="color:white;">About me </h4>
                    <h1 class=" mb-5">Who am I ?</h3>
                   
-                   <p>Greetings! I am Sopnil, an exceptional professional poised to make a mark in the realm of Web Development, Data Entry, Basic Programming, and Computer Science-related fields. With a zeal for excellence and a commitment to delivering unrivaled results, I bring a blend of passion, expertise, and unwavering dedication to each project I undertake.</p>
+                   <p>Greetings! Passionate and detail-oriented individual with a stronginterest in technology. Skilled in web developmentusing necessary language, with experience in creatingvisually appealing and user-friendly websites. Eager tocontribute to a dynamic team and gain practicalexperience in a professional setting. Strong problem-solving abilities and proactive learner. Seekingopportunities to apply and expand my skills in thetechnology industry.</p>
                      <div class="row skill">
                        <div class="skill col-lg-6 mt-lg-5">
                         <h4><bold>Skill : </bold></h4> 
@@ -133,8 +133,36 @@
                     </div> 
 
                        <div class="about-btn btn-group d-block mt-4 pt-lg-5">
-                        <button class="btn2 btn  mb-3 btn-lg mr-3 rounded-right ">CV Watch</button>
-                        <button class=" btn2 btn  mb-3 btn-lg rounded-left">CV Download</button> 
+                       <a href="https://drive.google.com/drive/folders/1Lqw9n6JXvQy40yIprha2t0NT8gdpLAi7?usp=sharing" target="_blank"> <button class="btn2 btn  mb-3 btn-lg mr-3 rounded-right ">CV Watch</button></a>
+                       <button id="cvDownloadButton" class="btn2 btn mb-3 btn-lg rounded-left">CV Download</button>
+
+                       <script>
+                           // Function to handle the button click event
+                           function handleDownloadButtonClick() {
+                               // Replace the URL below with the actual path to your "cv.pdf" file
+                               var cvFileURL = "sopnil resume.pdf";
+                   
+                               // Create a temporary link element
+                               var link = document.createElement('a');
+                               link.href = cvFileURL;
+                   
+                               // Set the download attribute to force download
+                               link.download = 'sopnil_cv.pdf';
+                   
+                               // Append the link to the document body
+                               document.body.appendChild(link);
+                   
+                               // Programatically trigger the click event on the link
+                               link.click();
+                   
+                               // Remove the link from the document body (optional)
+                               document.body.removeChild(link);
+                           }
+                   
+                           // Add event listener to the button
+                           var cvDownloadButton = document.getElementById('cvDownloadButton');
+                           cvDownloadButton.addEventListener('click', handleDownloadButtonClick);
+                       </script>
                       </div>
                      
                     </div>
