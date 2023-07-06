@@ -175,22 +175,36 @@ html,body{
    box-shadow: 0 0 100px #999;
    transform: scale(1.1);
 }
-.social-icon a i{
-   width: 12%; 
-   padding:  1%;
+.social-icon a i {
+   width: 12%;
+   padding: 1%;
    font-size: 25px;
    margin-top: 25px;
    margin-right: 30px;
-   color:  #999;
-   
+   color: #999;
    border-radius: 30%;
 }
-.social-icon a i:hover{
-   color: #085af3;
-   
+
+.social-icon a i:hover {
    transform: scale(1.2);
-   
 }
+
+.social-icon a[href="https://github.com/IKSopnil"] i:hover {
+   color: #085af3; /* Blue color for GitHub */
+}
+
+.social-icon a[href="https://www.facebook.com/ibrahimkhalil.sopnil"] i:hover {
+   color: #3b5998; /* Facebook blue color */
+}
+
+.social-icon a[href="https://www.linkedin.com/in/ibrahim-khalil-sopnil-01892a261"] i:hover {
+   color: #0e76a8; /* LinkedIn blue color */
+}
+
+.social-icon a[href=""] i:hover {
+   color: #c13584; /* Instagram purple color */
+}
+
 #services{
    background-color: #000000;
   
