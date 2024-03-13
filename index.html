@@ -84,12 +84,11 @@
               </div>
             </div>
             <div class="buty btn-group d-block text-left order-2 ">
-              <a target="_blank" href="https://github.com/IKSopnil"> <button
-                  class=" btn btn-outline mb-3 btn-lg mr-3 " data-toggle="tooltip" data-placement="bottom"
-                  title="Watch my work."> My Work</button></a>
+              <a target="_blank" href="https://github.com/IKSopnil"> <button class=" btn btn-outline mb-3 btn-lg mr-3 "
+                  data-toggle="tooltip" data-placement="bottom" title="Watch my work."> My Work</button></a>
               <a target="_blank" href="https://www.fiverr.com/ik_sopnil">
-                <button class=" btn btn-outline mb-3 btn-lg rounded-left" data-toggle="tooltip"
-                  data-placement="bottom" title="Let's have a deal.">Recruit</button>
+                <button class=" btn btn-outline mb-3 btn-lg rounded-left" data-toggle="tooltip" data-placement="bottom"
+                  title="Let's have a deal.">Recruit</button>
               </a>
             </div>
           </div>
@@ -119,7 +118,11 @@
           <div class="about  pt-5">
             <h4 class="mb-5 mt-4" style="color:white;">About me </h4>
             <h1 class=" mb-5">Who am I ?</h3>
-              <p>Greetings! Passionate and detail-oriented individual with a strong interest in technology. Skilled in web development using necessary language, with experience in creating visually appealing and user-friendly websites. Eager to contribute to a dynamic team and gain practical experience in a professional setting. Strong problem-solving abilities and proactive learner. Seeking opportunities to apply and expand my skills in the technology industry.</p>
+              <p>Greetings! Passionate and detail-oriented individual with a strong interest in technology. Skilled in
+                web development using necessary language, with experience in creating visually appealing and
+                user-friendly websites. Eager to contribute to a dynamic team and gain practical experience in a
+                professional setting. Strong problem-solving abilities and proactive learner. Seeking opportunities to
+                apply and expand my skills in the technology industry.</p>
               <div class="row skill">
                 <div class="skill col-lg-6 mt-lg-5">
                   <h4>
@@ -152,11 +155,12 @@
                 <a href="sopnil_resume.pdf" target="_blank">
                   <button class="btn2 btn mb-3 btn-lg mr-3 rounded-right">Resume Watch</button>
                 </a>
-                
+
                 <button id="cvDownloadButton" class="btn2 btn mb-3 btn-lg rounded-left">Resume Download</button>
-              
+
                 <!-- Modal -->
-                <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel"
+                  aria-hidden="true">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -171,60 +175,60 @@
                     </div>
                   </div>
                 </div>
-              
+
                 <script>
                   // Function to handle the "Resume Watch" button click event
                   function openPdfModal() {
                     // Replace the URL below with the actual path to your "cv.pdf" file
                     var cvFileURL = "sopnil_resume.pdf";
-              
+
                     // Create an iframe element
                     var pdfIframe = document.createElement('iframe');
                     pdfIframe.src = cvFileURL;
                     pdfIframe.style.width = '100%';
                     pdfIframe.style.height = '500px'; // You can adjust the height as needed
-              
+
                     // Insert the iframe into the modal body
                     var modalBody = document.querySelector('#pdfModal .modal-body');
                     modalBody.innerHTML = ''; // Clear the modal body in case it already contains content
                     modalBody.appendChild(pdfIframe);
-              
+
                     // Open the modal
                     $('#pdfModal').modal('show');
                   }
-              
+
                   // Function to handle the "Resume Download" button click event
                   function handleDownloadButtonClick() {
                     // Replace the URL below with the actual path to your "cv.pdf" file
                     var cvFileURL = "sopnil_resume.pdf";
-              
+
                     // Create a temporary link element
                     var link = document.createElement('a');
                     link.href = cvFileURL;
-              
+
                     // Set the download attribute to force download
                     link.download = 'sopnil_resume.pdf';
-              
+
                     // Append the link to the document body
                     document.body.appendChild(link);
-              
+
                     // Programatically trigger the click event on the link
                     link.click();
-              
+
                     // Remove the link from the document body (optional)
                     document.body.removeChild(link);
                   }
-              
+
                   // Add event listener to the "Resume Download" button
                   var cvDownloadButton = document.getElementById('cvDownloadButton');
                   cvDownloadButton.addEventListener('click', handleDownloadButtonClick);
                 </script>
-              
+
                 <!-- Include Bootstrap JS and jQuery -->
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-              
+
               </div>
 
           </div>
@@ -477,16 +481,38 @@
 </script>
 <style>
   .dark-mode {
-    background-color: rgb(255, 255, 255) !important;
-    color: rgb(0, 0, 0);
+    background-color: #ffffff !important;
+    color: #000000;
   }
 
   .fixed-bottom i {
-    color: rgb(0, 0, 0);
+    color: #000000;
     border: none;
-
-
   }
+
+  service
+
+  .dark-mode .home,
+.dark-mode .home *,
+.dark-mode .Abt,
+.dark-mode .Abt *,
+.dark-mode .navbar,
+.dark-mode .navbar *,
+.dark-mode .service,
+.dark-mode .service * {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.dark-mode .home-img img,
+.dark-mode .Abt .abt-img img {
+  border: none;
+}
+
+
+
+  
+  
 </style>
 </body>
 
