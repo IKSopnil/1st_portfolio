@@ -232,29 +232,9 @@ body {
 
 #services {
    background-color: #000000;
-
+   border-radius: 50%;
    color: #999;
    padding: 1% 5%;
-}
-
-@media screen and (max-width:991px) {
-   #services {
-      height: 2400px;
-   }
-
-}
-
-@media screen and (max-width:767px) {
-   #services {
-      height: 3400px;
-   }
-}
-
-@media screen and (max-width:450px) {
-   #services {
-      height: 3000px;
-   }
-
 }
 
 .service-col i {
@@ -274,19 +254,7 @@ body {
    box-shadow: 2px 6px 5px #C5D8F5;
 }
 
-@media screen and (max-width:376px) {
-   .recent {
-      margin-left: -2%;
-   }
 
-}
-
-@media screen and (max-width:285px) {
-   .recent {
-      margin-left: -11%;
-   }
-
-}
 
 .card .btn {
    color: rgb(202, 202, 202);
@@ -404,7 +372,7 @@ footer {
    text-shadow: 0 0 10px rgb(255, 0, 0);
    position: fixed;
    z-index: 1;
-   bottom: 10px;
+   bottom: 40px;
    right: 20px;
 
 }
@@ -414,7 +382,7 @@ footer {
    text-shadow: 0 0 10px rgb(255, 0, 0);
    position: fixed;
    z-index: 1;
-   bottom: 10px;
+   bottom: 40px;
    right: 100px;
 
 }
