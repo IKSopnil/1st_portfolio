@@ -213,23 +213,9 @@ body {
    transform: scale(1.2);
 }
 
-.social-icon a[href="https://github.com/IKSopnil"] i:hover {
-   color: #085af3;
-   /* Blue color for GitHub */
-}
 
-.social-icon a[href="https://www.facebook.com/ibrahimkhalil.sopnil"] i:hover {
-   color: #3b5998;
-   /* Facebook blue color */
-}
-
-.social-icon a[href="https://www.linkedin.com/in/ibrahim-khalil-sopnil-01892a261"] i:hover {
-   color: #0e76a8;
-   /* LinkedIn blue color */
-}
-
-.social-icon a[href=""] i:hover {
-   color: #c13584;
+.social-icon a i:hover {
+   color: #FF0000;
    /* Instagram purple color */
 }
 
