@@ -81,8 +81,11 @@ body {
    font-weight: bold;
    font-size: 16px;
    font-family: Verdana;
+   text-shadow: 5px 5px 25px #999;
 }
 
+   
+ 
 .weby {
    animation: glow 1s ease-in-out infinite alternate;
 }
